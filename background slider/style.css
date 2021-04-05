@@ -9,11 +9,10 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background-image: url(./img/pic3.jpg);
   background-position: center center;
   background-size: cover;
   overflow: hidden;
-  transition: 0.4s ease;
+  transition: 0.4s;
 }
 body::before {
   content: "";
