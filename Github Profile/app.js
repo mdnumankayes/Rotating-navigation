@@ -19,14 +19,12 @@ const search = document.getElementById('search')
 }
 async function getRepos(username){
     try{
-        const { data } =  await axios(APIURL + username +'/repos')
-        console.log(data)
+        const { data } =  await axios(APIURL + username +'/repos?sort=created')
         addReposToCard(data)
 
     }catch(err){
-        console.log(err)
         createErrorCard('Problem fetching repos')
-        }
+    }
 
 }
 
