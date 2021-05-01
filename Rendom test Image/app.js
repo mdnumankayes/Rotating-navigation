@@ -20,5 +20,3 @@ function getRandomNmbr(){
     return Math.floor(Math.random() * 10) + 300
     
 }
-
-console.log(getrandomSize())
